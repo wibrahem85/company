@@ -1,13 +1,18 @@
 body {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+
+}
+
+.exp {
+    display: none
 }
 
 /*start navbar*/
+
 .navbar-container,
 .navbar {
     background: #f4511e !important;
-
 
 }
 

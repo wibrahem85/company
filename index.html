@@ -11,6 +11,7 @@
     <title>Company</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--animate css file for nice animation-->
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -24,7 +25,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#top" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--start container-fluid-->
     <div class="container-fluid navbar-container" id="top">
 
@@ -73,9 +74,13 @@
             </div>
         </div>
         <!--end jumbtron-->
+
+
     </div>
     <!--end container-fluid-->
+    <div class="exp">
 
+    </div>
     <!--start about company-->
     <div class="container-fluid about" id="about">
         <h1>ABOUT COMPANY PAGE</h1>
@@ -99,8 +104,8 @@
     <div class="container-fluid our-values ">
         <div class="row">
             <div class="col-sm-12 col-md-4">
-                <i class="fas fa-globe-asia"></i> </div>
-            <div class="col-sm-12 col-md-8">
+                <i class="fas fa-globe-asia wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s"></i> </div>
+            <div class=" col-sm-12 col-md-8">
                 <h3>OUR VALUES</h3>
                 <p class="text-justify"><span>MISSION:</span> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -116,8 +121,8 @@
     <div class="container-fluid text-center services" id="services">
         <h3 class="pt-3">SERVICES</h3>
         <p class="pt-4 pb-5">What we offer</p>
-        <div class="row innerdiv">
-            <div class="col-sm-12 col-md-4">
+        <div class="row innerdiv  wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s">
+            <div class=" col-sm-12 col-md-4">
                 <i class="fas fa-power-off"></i>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
@@ -150,8 +155,8 @@
     <div class="container-fluid text-center portfolio" id="portfolio">
         <p class="font-weight-bold pb-3 pt-4">PORTFOLIO</p>
         <p class="py-2 mb-5"> What we have created</p>
-        <div class="row ccard-deck">
-            <div class="ccard col-12 col-md-4">
+        <div class="row ccard-deck wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s">
+            <div class=" ccard col-12 col-md-4">
                 <div class="containerdiv">
                     <img src="images/paris.jpg" alt="paris image" />
                     <h5>Paris</h5>
@@ -218,8 +223,8 @@
     <div class="container-fluid pricing text-center py-5" id="pricing">
         <h3 class="pb-4 pt-5">PRICING</h3>
         <p>Choose a payment plan that works for you</p>
-        <div class="row ccard-deck text-center p-5">
-            <div class="ccard col-12 col-md-4">
+        <div class="row ccard-deck text-center p-5 wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s">
+            <div class=" ccard col-12 col-md-4">
                 <div class="onecard">
                     <div class="ccard-body">
                         <h5 class="ccard-title">Basic</h5>
@@ -290,9 +295,9 @@
                 <p><i class="fas fa-envelope"></i> myemail@something.com</p>
 
             </div>
-            <div class="col-sm-12 col-md-7 row p-3">
-                <div class="form-group col-sm-12 col-md-6 ">
-                    <input type="text" placeholder="Name" class="form-control" />
+            <div class="col-sm-12 col-md-7 row p-3 wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s">
+                <div class=" form-group col-sm-12 col-md-6 ">
+                    <input type=" text" placeholder="Name" class="form-control" />
                 </div>
                 <div class="form-group col-sm-12 col-md-6">
                     <input type="text" placeholder="Email" class="form-control" />
@@ -322,13 +327,27 @@
     </div>
     <!--end footer-->
 
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+        $(document).ready(function() {
+            $("html").niceScroll();
+        });
+
+    </script>
 </body>
 
 </html>
