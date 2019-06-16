@@ -349,6 +349,20 @@ footer p {
 
 /*end footer*/
 /*start media query*/
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .fa-signal {
+        font-size: 10rem;
+    }
+
+    .fa-globe-asia {
+        font-size: 12rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        padding-left: .5rem;
+    }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 576px) {
     .navbar-light .navbar-toggler {
 
