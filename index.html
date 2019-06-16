@@ -27,10 +27,9 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--start container-fluid-->
-    <div class="container-fluid navbar-container" id="top">
-
+    <div class="container-fluid navbar-container fixed-top" id="top">
         <!--start navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,27 +59,26 @@
         </nav>
         <!--end navbar-->
 
-        <!--start jumbtron-->
-        <div class="jumbotron text-center">
-            <h1 class="display-4">Company</h1>
-            <p class="lead">We specialize in blablabla</p>
-            <div class="container">
-                <div class="row justify-content-center">
+    </div>
 
-                    <div class="col-9 col-md-6 form-group special-form mr-n1"><input type="text" placeholder="Email Address" class="form-control" /></div>
+    <!--start jumbtron-->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Company</h1>
+        <p class="lead">We specialize in blablabla</p>
+        <div class="container">
+            <div class="row justify-content-center">
 
-                    <div class="col-1 form-group special-form"><a class=" btn btn-danger" href="#" role="button">Subscribe</a></div>
-                </div>
+                <div class="col-9 col-md-6 form-group special-form mr-n1"><input type="text" placeholder="Email Address" class="form-control" /></div>
+
+                <div class="col-1 form-group special-form"><a class=" btn btn-danger" href="#" role="button">Subscribe</a></div>
             </div>
         </div>
-        <!--end jumbtron-->
-
-
     </div>
-    <!--end container-fluid-->
-    <div class="exp">
+    <!--end jumbtron-->
 
-    </div>
+
+    <!--</div> <!--end container-fluid-->
+
     <!--start about company-->
     <div class="container-fluid about" id="about">
         <h1>ABOUT COMPANY PAGE</h1>
@@ -101,7 +99,7 @@
     <!--end about company-->
 
     <!--start about our values-->
-    <div class="container-fluid our-values ">
+    <div class="container-fluid our-values">
         <div class="row">
             <div class="col-sm-12 col-md-4">
                 <i class="fas fa-globe-asia wow bounceInUp" data-wow-duration="3s" data-wow-offset="10" data-wow-delay=".5s"></i> </div>
@@ -344,10 +342,15 @@
         })
         wow.init();
         $(document).ready(function() {
-            $("html").niceScroll();
+            $("html").niceScroll({
+                cursorcolor: "#f4511e"
+
+
+            });
         });
 
     </script>
+
 </body>
 
 </html>

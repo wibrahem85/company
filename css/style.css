@@ -1,14 +1,23 @@
+/*start main rulez*/
 body {
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
-.exp {
-    display: none
+.row {
+
+    margin-left: 0;
+    margin-right: 0;
 }
+
+/*end main rulez*/
 
 /*start navbar*/
+#top {
+    height: 5rem;
+    background: #f4511e !important;
+}
 
 .navbar-container,
 .navbar {
@@ -41,6 +50,9 @@ body {
 .jumbotron {
     background: #f4511e;
     color: white;
+    padding: 7rem 2rem 4rem;
+    border-radius: 0;
+
 }
 
 .jumbotron .btn-danger {
@@ -394,8 +406,16 @@ footer p {
 }
 
 @media only screen and (max-width: 576px) {
+    .navbar-light .navbar-nav .active > .nav-link {
+        padding: .5rem;
+    }
+
     .jumbotron {
         padding: 6rem 1rem;
+    }
+
+    .jumbotron h1.display-4 {
+        font-size: 2.5rem;
     }
 
     .about button {
